@@ -1,0 +1,408 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building My Simple Webx Application 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> jetty-maven-plugin:8.1.13.v20130916:run (default-cli) > test-compile @ tutorial1 >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tutorial1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\workspace\study\tutorial1\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ tutorial1 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 13 source files to D:\workspace\study\tutorial1\target\classes
+[INFO] 
+[INFO] --- maven-antrun-plugin:1.7:run (default) @ tutorial1 ---
+[INFO] Executing tasks
+
+main:
+     [echo] project home:        D:\workspace\study\tutorial1
+     [echo] java home:           C:\Program Files\Java\jdk1.6.0_45\jre
+     [echo] java source version: 1.6
+     [echo] java target version: 1.6
+     [echo] java source charset: UTF-8
+[INFO] Executed tasks
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tutorial1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\workspace\study\tutorial1\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ tutorial1 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< jetty-maven-plugin:8.1.13.v20130916:run (default-cli) < test-compile @ tutorial1 <<<
+[INFO] 
+[INFO] --- jetty-maven-plugin:8.1.13.v20130916:run (default-cli) @ tutorial1 ---
+[INFO] Configuring Jetty for project: My Simple Webx Application
+[INFO] webAppSourceDirectory not set. Defaulting to D:\workspace\study\tutorial1\src\main\webapp
+[INFO] Reload Mechanic: automatic
+[INFO] Classes = D:\workspace\study\tutorial1\target\classes
+[INFO] Context path = /
+[INFO] Tmp directory = D:\workspace\study\tutorial1\target\tmp
+[INFO] Web defaults = org/eclipse/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] web.xml file = file:/D:/workspace/study/tutorial1/src/main/webapp/WEB-INF/web.xml
+[INFO] Webapp directory = D:\workspace\study\tutorial1\src\main\webapp
+2014-11-15 01:08:12.160:INFO:oejs.Server:jetty-8.1.13.v20130916
+2014-11-15 01:08:13.063:INFO:oejpw.PlusConfiguration:No Transaction manager found - if your webapp requires one, please configure one.
+2014-11-15 01:08:17.294:INFO:/:No Spring WebApplicationInitializer types detected on classpath
+2014-11-15 01:08:17.634:INFO:/:Initializing logback system
+INFO: configuring "logback" using file:/D:/workspace/study/tutorial1/src/main/webapp/WEB-INF/logback.xml
+ - with property localAddress = 10.22.22.73
+ - with property localHost = alibaba-82973N
+ - with property loggingCharset = GBK
+ - with property loggingLevel = INFO
+ - with property loggingRoot = C:\Users\yilong.wyl\logs
+
+2014-11-15 01:08:17.743:INFO:/:Initializing Spring root WebApplicationContext
+
+165  [2014-11-15 01:08:17 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+
+231  [2014-11-15 01:08:17 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentsContext - Refreshing Root WebApplicationContext: startup date [Sat Nov 15 01:08:17 CST 2014]; root of context hierarchy
+
+1776 [2014-11-15 01:08:19 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/webx.xml]
+
+2356 [2014-11-15 01:08:19 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/common/webx-component-and-root.xml]
+
+2648 [2014-11-15 01:08:20 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/common/pipeline-exception.xml]
+
+2748 [2014-11-15 01:08:20 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/common/resources.xml]
+
+2832 [2014-11-15 01:08:20 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/common/uris.xml]
+
+3055 [2014-11-15 01:08:20 ] -   [ip=, ref=, ua=, sid=]
+  WARN  c.a.c.webx.config.WebxConfiguration - Application is running in Development Mode.
+
+3244 [2014-11-15 01:08:20 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.service.upload.UploadService - Upload Parameters: {
+  Repository Path                  = C:\Users\yilong.wyl\AppData\Local\Temp
+  Maximum Request Size             = 5M
+  Maximum File Size                = n/a
+  Threshold before Writing to File = 10K
+  Keep Form Field in Memory        = false
+  File Name Key                    = [
+                                       [1/1] filename
+                                     ]
+}
+
+3417 [2014-11-15 01:08:20 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+3424 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentsContext - Bean '(inner bean)#3' of type [class com.alibaba.citrus.springext.util.SpringExtUtil$ConstructorArg] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+3426 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentsContext - Bean '(inner bean)#3' of type [class com.alibaba.citrus.webx.config.impl.WebxConfigurationImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+3433 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.s.c.InheritableListableBeanFactory - Pre-instantiating singletons in com.alibaba.citrus.springext.support.context.InheritableListableBeanFactory@75e79c77: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.alibaba.citrus.service.configuration.support.PropertyPlaceholderConfigurer#0,templateService,mappingRuleService,dataResolverService,exceptionPipeline,resourceLoadingService,uriBrokerService,productionModeSensiblePostProcessor,webxConfiguration,requestContexts,com.alibaba.citrus.service.requestcontext.impl.RequestContextBeanFactoryPostProcessor#0,uploadService,pullService,moduleLoaderService,com.alibaba.citrus.webx.context.WebxComponentsLoader$WebxComponentsCreator,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+
+3519 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - SpringResourceLoaderAdapter : initialization starting.
+
+3519 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - SpringResourceLoaderAdapter : set path '/common/templates/'
+
+3519 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - SpringResourceLoaderAdapter : initialization complete.
+
+3519 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - PreloadedResourceLoader : initialization starting.
+
+3520 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - PreloadedResourceLoader : preloaded resources: {
+  globalVMs/escape_macros.vm = class path resource [com/alibaba/citrus/service/velocity/support/escape_macros.vm]
+}
+
+3520 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - PreloadedResourceLoader : initialization complete.
+
+3678 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.ExtensionMappingRule - Initialized extension.input:ExtensionMappingRule with cache disabled
+
+3679 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.ExtensionMappingRule - Initialized extension.output:ExtensionMappingRule with cache disabled
+
+3716 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectModuleMappingRule - Initialized action:DirectModuleMappingRule with cache disabled
+
+3717 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectModuleMappingRule - Initialized screen.notemplate:DirectModuleMappingRule with cache disabled
+
+3723 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.FallbackModuleMappingRule - Initialized screen:FallbackModuleMappingRule with cache disabled
+
+3727 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectTemplateMappingRule - Initialized screen.template:DirectTemplateMappingRule with cache disabled
+
+3731 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.FallbackTemplateMappingRule - Initialized layout.template:FallbackTemplateMappingRule with cache disabled
+
+3732 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectModuleMappingRule - Initialized control.notemplate:DirectModuleMappingRule with cache disabled
+
+3733 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.FallbackModuleMappingRule - Initialized control:FallbackModuleMappingRule with cache disabled
+
+3733 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectTemplateMappingRule - Initialized control.template:DirectTemplateMappingRule with cache disabled
+
+4028 [2014-11-15 01:08:21 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.citrus.service.pull.PullService - Initialized pull service [key=PullService.pullService] with 14 pre-pulled tools, 5 pre-queued tools and 0 runtime tools
+2014-11-15 01:08:23.046:INFO:/:Initializing Spring sub WebApplicationContext: app2
+
+5466 [2014-11-15 01:08:23 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentsLoader - Initializing Spring sub WebApplicationContext: app2
+
+5467 [2014-11-15 01:08:23 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Refreshing WebApplicationContext for namespace 'app2': startup date [Sat Nov 15 01:08:23 CST 2014]; parent: Root WebApplicationContext
+
+6277 [2014-11-15 01:08:23 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from Resource[WEB-INF/webx-app2.xml, loaded by ResourceLoadingService]
+
+6397 [2014-11-15 01:08:23 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from Resource[WEB-INF/common/webx-component-and-root.xml, loaded by ResourceLoadingService]
+
+6493 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from Resource[WEB-INF/common/webx-component.xml, loaded by ResourceLoadingService]
+
+6616 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from Resource[WEB-INF/common/pipeline.xml, loaded by ResourceLoadingService]
+
+6746 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from Resource[WEB-INF/app2/form.xml, loaded by ResourceLoadingService]
+
+6877 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+6879 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Bean '(inner bean)' of type [class com.alibaba.citrus.springext.util.SpringExtUtil$ConstructorArg] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+6882 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Bean '(inner bean)#1' of type [class com.alibaba.citrus.webx.config.impl.WebxConfigurationImpl$ComponentsConfigImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+6882 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  WARN  c.a.c.webx.config.WebxConfiguration - Application is running in Development Mode.
+
+6882 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Bean 'webxConfiguration' of type [class com.alibaba.citrus.webx.config.impl.WebxConfigurationImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+6883 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Bean '(inner bean)' of type [class com.alibaba.citrus.webx.config.impl.WebxConfigurationImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+6885 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.s.c.InheritableListableBeanFactory - Pre-instantiating singletons in com.alibaba.citrus.springext.support.context.InheritableListableBeanFactory@7f8dd355: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.alibaba.citrus.service.configuration.support.PropertyPlaceholderConfigurer#0,templateService,mappingRuleService,dataResolverService,productionModeSensiblePostProcessor,webxConfiguration,pullService,pipeline,formService,module.screen.simple.SayHi,moduleLoaderService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: com.alibaba.citrus.springext.support.context.InheritableListableBeanFactory@75e79c77
+
+6899 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - SpringResourceLoaderAdapter : initialization starting.
+
+6899 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - SpringResourceLoaderAdapter : set path '/app2/templates/'
+
+6899 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - SpringResourceLoaderAdapter : initialization complete.
+
+6899 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - PreloadedResourceLoader : initialization starting.
+
+6899 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - PreloadedResourceLoader : preloaded resources: {
+  globalVMs/escape_macros.vm = class path resource [com/alibaba/citrus/service/velocity/support/escape_macros.vm]
+}
+
+6899 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - PreloadedResourceLoader : initialization complete.
+
+6926 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.ExtensionMappingRule - Initialized extension.input:ExtensionMappingRule with cache disabled
+
+6928 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.ExtensionMappingRule - Initialized extension.output:ExtensionMappingRule with cache disabled
+
+7055 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectModuleMappingRule - Initialized action:DirectModuleMappingRule with cache disabled
+
+7057 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectModuleMappingRule - Initialized screen.notemplate:DirectModuleMappingRule with cache disabled
+
+7058 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.FallbackModuleMappingRule - Initialized screen:FallbackModuleMappingRule with cache disabled
+
+7059 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectTemplateMappingRule - Initialized screen.template:DirectTemplateMappingRule with cache disabled
+
+7061 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.FallbackTemplateMappingRule - Initialized layout.template:FallbackTemplateMappingRule with cache disabled
+
+7062 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectModuleMappingRule - Initialized control.notemplate:DirectModuleMappingRule with cache disabled
+
+7063 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.FallbackModuleMappingRule - Initialized control:FallbackModuleMappingRule with cache disabled
+
+7064 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectTemplateMappingRule - Initialized control.template:DirectTemplateMappingRule with cache disabled
+
+7097 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.citrus.service.pull.PullService - Initialized pull service [key=PullService.pullService.1] with 16 pre-pulled tools, 5 pre-queued tools and 0 runtime tools
+2014-11-15 01:08:24.742:INFO:/:Initializing Spring sub WebApplicationContext: app1
+
+7163 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentsLoader - Initializing Spring sub WebApplicationContext: app1
+
+7163 [2014-11-15 01:08:24 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Refreshing WebApplicationContext for namespace 'app1': startup date [Sat Nov 15 01:08:24 CST 2014]; parent: Root WebApplicationContext
+
+8440 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from Resource[WEB-INF/webx-app1.xml, loaded by ResourceLoadingService]
+
+8513 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from Resource[WEB-INF/common/webx-component-and-root.xml, loaded by ResourceLoadingService]
+
+8592 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from Resource[WEB-INF/common/webx-component.xml, loaded by ResourceLoadingService]
+
+8657 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from Resource[WEB-INF/common/pipeline.xml, loaded by ResourceLoadingService]
+
+8724 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from Resource[WEB-INF/app1/form.xml, loaded by ResourceLoadingService]
+
+8802 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+8804 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Bean '(inner bean)' of type [class com.alibaba.citrus.springext.util.SpringExtUtil$ConstructorArg] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+8805 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Bean '(inner bean)#1' of type [class com.alibaba.citrus.webx.config.impl.WebxConfigurationImpl$ComponentsConfigImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+8806 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  WARN  c.a.c.webx.config.WebxConfiguration - Application is running in Development Mode.
+
+8806 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Bean 'webxConfiguration' of type [class com.alibaba.citrus.webx.config.impl.WebxConfigurationImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+8806 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Bean '(inner bean)' of type [class com.alibaba.citrus.webx.config.impl.WebxConfigurationImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+8808 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.s.c.InheritableListableBeanFactory - Pre-instantiating singletons in com.alibaba.citrus.springext.support.context.InheritableListableBeanFactory@351d4566: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.alibaba.citrus.service.configuration.support.PropertyPlaceholderConfigurer#0,templateService,mappingRuleService,dataResolverService,productionModeSensiblePostProcessor,webxConfiguration,pullService,pipeline,formService,module.action.RegisterAction,module.screen.form.Welcome,module.screen.list.Default,module.screen.mark.SayHi1,module.screen.multievent.SayHello1,module.screen.multievent.SayHello2,module.screen.simple.Count,module.screen.simple.Download,module.screen.simple.SayHi,module.screen.simple.SayHi1,module.screen.simple.SayHiImage,moduleLoaderService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: com.alibaba.citrus.springext.support.context.InheritableListableBeanFactory@75e79c77
+
+8817 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - SpringResourceLoaderAdapter : initialization starting.
+
+8817 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - SpringResourceLoaderAdapter : set path '/app1/templates/'
+
+8817 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - SpringResourceLoaderAdapter : initialization complete.
+
+8817 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - PreloadedResourceLoader : initialization starting.
+
+8818 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - PreloadedResourceLoader : preloaded resources: {
+  globalVMs/escape_macros.vm = class path resource [com/alibaba/citrus/service/velocity/support/escape_macros.vm]
+}
+
+8818 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.velocity.VelocityEngine - PreloadedResourceLoader : initialization complete.
+
+8844 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.ExtensionMappingRule - Initialized extension.input:ExtensionMappingRule with cache disabled
+
+8844 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.ExtensionMappingRule - Initialized extension.output:ExtensionMappingRule with cache disabled
+
+8866 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectModuleMappingRule - Initialized action:DirectModuleMappingRule with cache disabled
+
+8867 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectModuleMappingRule - Initialized screen.notemplate:DirectModuleMappingRule with cache disabled
+
+8867 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.FallbackModuleMappingRule - Initialized screen:FallbackModuleMappingRule with cache disabled
+
+8868 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectTemplateMappingRule - Initialized screen.template:DirectTemplateMappingRule with cache disabled
+
+8869 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.FallbackTemplateMappingRule - Initialized layout.template:FallbackTemplateMappingRule with cache disabled
+
+8869 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectModuleMappingRule - Initialized control.notemplate:DirectModuleMappingRule with cache disabled
+
+8870 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.FallbackModuleMappingRule - Initialized control:FallbackModuleMappingRule with cache disabled
+
+8871 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.m.i.r.DirectTemplateMappingRule - Initialized control.template:DirectTemplateMappingRule with cache disabled
+
+8877 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.citrus.service.pull.PullService - Initialized pull service [key=PullService.pullService.2] with 16 pre-pulled tools, 5 pre-queued tools and 0 runtime tools
+2014-11-15 01:08:26.494:INFO:/:WebxComponents: initialization completed
+
+8914 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentsLoader - WebxComponents: initialization completed
+
+8914 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8747 ms
+2014-11-15 01:08:26.496:INFO:/:Initializing filter: mdc
+
+8916 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.s.SetLoggingContextFilter - Initializing filter: mdc
+2014-11-15 01:08:26.497:INFO:/:SetLoggingContextFilter - mdc: initialization completed
+
+8917 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.s.SetLoggingContextFilter - SetLoggingContextFilter - mdc: initialization completed
+2014-11-15 01:08:26.498:INFO:/:Initializing filter: webx
+
+8918 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.servlet.WebxFrameworkFilter - Initializing filter: webx
+2014-11-15 01:08:26.501:INFO:/:WebxFrameworkFilter - webx: initialization completed
+
+8921 [2014-11-15 01:08:26 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.servlet.WebxFrameworkFilter - WebxFrameworkFilter - webx: initialization completed
+2014-11-15 01:08:26.544:INFO:oejs.NCSARequestLog:Opened D:\workspace\study\tutorial1\target\access.log
+2014-11-15 01:08:26.570:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:8081
+[INFO] Started Jetty Server
+2014-11-15 01:19:41.610:INFO:/:Closing Spring root WebApplicationContext
+
+684031 [2014-11-15 01:19:41 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentsContext - Closing Root WebApplicationContext: startup date [Sat Nov 15 01:08:17 CST 2014]; root of context hierarchy
+
+684032 [2014-11-15 01:19:41 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.s.c.InheritableListableBeanFactory - Destroying singletons in com.alibaba.citrus.springext.support.context.InheritableListableBeanFactory@75e79c77: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.alibaba.citrus.service.configuration.support.PropertyPlaceholderConfigurer#0,templateService,mappingRuleService,dataResolverService,exceptionPipeline,resourceLoadingService,uriBrokerService,productionModeSensiblePostProcessor,webxConfiguration,requestContexts,com.alibaba.citrus.service.requestcontext.impl.RequestContextBeanFactoryPostProcessor#0,uploadService,pullService,moduleLoaderService,com.alibaba.citrus.webx.context.WebxComponentsLoader$WebxComponentsCreator,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+
+684043 [2014-11-15 01:19:41 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Closing WebApplicationContext for namespace 'app1': startup date [Sat Nov 15 01:08:24 CST 2014]; parent: Root WebApplicationContext
+
+684045 [2014-11-15 01:19:41 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.s.c.InheritableListableBeanFactory - Destroying singletons in com.alibaba.citrus.springext.support.context.InheritableListableBeanFactory@351d4566: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.alibaba.citrus.service.configuration.support.PropertyPlaceholderConfigurer#0,templateService,mappingRuleService,dataResolverService,productionModeSensiblePostProcessor,webxConfiguration,pullService,pipeline,formService,module.action.RegisterAction,module.screen.form.Welcome,module.screen.list.Default,module.screen.mark.SayHi1,module.screen.multievent.SayHello1,module.screen.multievent.SayHello2,module.screen.simple.Count,module.screen.simple.Download,module.screen.simple.SayHi,module.screen.simple.SayHi1,module.screen.simple.SayHiImage,moduleLoaderService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: com.alibaba.citrus.springext.support.context.InheritableListableBeanFactory@75e79c77
+
+684055 [2014-11-15 01:19:41 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.w.c.WebxComponentContext - Closing WebApplicationContext for namespace 'app2': startup date [Sat Nov 15 01:08:23 CST 2014]; parent: Root WebApplicationContext
+
+684057 [2014-11-15 01:19:41 ] -   [ip=, ref=, ua=, sid=]
+  INFO  c.a.c.s.s.c.InheritableListableBeanFactory - Destroying singletons in com.alibaba.citrus.springext.support.context.InheritableListableBeanFactory@7f8dd355: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,com.alibaba.citrus.service.configuration.support.PropertyPlaceholderConfigurer#0,templateService,mappingRuleService,dataResolverService,productionModeSensiblePostProcessor,webxConfiguration,pullService,pipeline,formService,module.screen.simple.SayHi,moduleLoaderService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: com.alibaba.citrus.springext.support.context.InheritableListableBeanFactory@75e79c77
+2014-11-15 01:19:41.644:INFO:/:Shutting down log system
+2014-11-15 01:19:41.653:INFO:oejsl.ELContextCleaner:javax.el.BeanELResolver purged
+2014-11-15 01:19:41.653:INFO:oejsh.ContextHandler:stopped o.m.j.p.JettyWebAppContext{/,file:/D:/workspace/study/tutorial1/src/main/webapp/},file:/D:/workspace/study/tutorial1/src/main/webapp/
+[INFO] Jetty server exiting.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 11:32 min
+[INFO] Finished at: 2014-11-15T01:19:41+08:00
+[INFO] Final Memory: 35M/598M
+[INFO] ------------------------------------------------------------------------终止批处理操作吗(Y/N)? 终止批处理操作吗(Y/N)? ^C
